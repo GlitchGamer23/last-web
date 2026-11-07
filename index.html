@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paws & Play</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> <style>
+header{
+    width: 100%;
+    height:100px;
+
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+margin-top: 25px;
+}
+ul{
+    display: flex;
+
+}
+li{
+    margin: 15px;
+    opacity: 0.7;
+}
+
+
+#intro{margin-left: 60px;
+    margin-top: 4px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+#book{margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    background-color:rgb(226, 0, 139);
+    color: white;
+padding: 4px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#book:hover{
+    background-color:rgb(196, 0, 121) ;
+
+}
+#title{
+    display: flex;
+    flex-direction: column;
+    margin-left:50px ;
+
+}
+#photo{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+}
+#on{
+   margin-top: 10px;
+    height: 40px;
+    width: 180px;
+    background-color:rgb(226, 0, 139);
+    color: white;
+padding: 4px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#services{
+    margin-left: 16px;
+    border: 3px  rgb(226, 0, 139) solid ;
+       margin-top: 10px;
+    height: 40px;
+    width: 180px;
+    background-color:rgb(233, 233, 233);
+    color: rgb(226, 0, 139);
+padding: 4px;
+border-radius: 30px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#services:hover{
+    color: whitesmoke;
+    background-color: rgb(226, 0, 139);
+}
+#on:hover{
+    background-color:rgb(196, 0, 121) ;}
+    #rating h1{font-weight: bolder;
+        font-size:x-large;
+        color: rgb(226, 0, 139) ;
+    }
+
+    #rating{width: 70vh;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin: 50px;
+    }
+     #rating p{
+       font-size:12px ;
+        color: rgb(0, 0, 0) ;
+        opacity: 0.7;
+    }
+    #firstcard{
+        padding: 5px;
+        margin-left:80px ;
+        border-radius: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }#secondcard{padding: 5px;
+    position: absolute;
+    top: 162%;
+        margin-left:40%;
+        border-radius: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    }
+    #thirdcard{ padding: 5px;
+    position: absolute;
+    top: 162%;
+        margin-left:70%;
+        border-radius: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+    #profit{
+        display: flex;
+        margin-top: 8px;
+     flex-direction: column;
+    }
+    #profit li{
+        margin: 3px;
+    }
+    </style>
+    
+</head>
+<body style="font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+background-color: whitesmoke;
+">
+    <header>
+        <nav><div id="intro">
+            <i class="fa-solid fa-paw " style="position: absolute;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          font-size: 50px;
+           top:4.5%;
+           left: 7%;
+           background-color:rgb(226, 0, 139);
+           color: whitesmoke;
+           border-radius: 10px;"></i>
+            <h1 style="font-weight:700;">Paws & Play</h1>
+            <p style="opacity: 0.7;
+            font-size: small;">premium pet care</p>
+        </div>
+            <div>
+            <ul>
+            <li><a href="">Services</a></li>
+               <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+               <li><a href="">Team</a></li>
+            <li><a href="">Contact</a></li>
+            </ul></div>
+            <div><button id="book">Book Now</button></div>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="title"><div><h1 style="font-size: 60px; font-family: 'Times New Roman', Times, serif; line-height: 70px;">Where Every Pet <br>
+             Gets the Royal <br> Treatment</h1></div>
+            <div><p style="margin-top: 30px; opacity: 0.7 ;">Professional grooming, loving daycare, 
+                and comfortable <br> boarding
+                 for your furry family members. Because they
+                  deserve<br> the best.</p></div><div><button id="on">Book an Apointment</button><button id="services">View Services</button></div></div>
+        <div id="photo"><img style="width:100vh; border-radius:30px 
+        ; height:70vh; box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&h=800&fit=crop" alt=""></div>
+<div id="rating">
+    <div><h1>10k</h1><p>Happy Pets</p></div>
+    <div><h1>8+</h1><p>Years Experience</p></div>
+    <div><h1>10k</h1><p>Happy Pets</p></div>
+    <div><h1>10k</h1><p>Happy Pets</p></div>
+</div></div>
+<div style="margin-top: 300px;
+"><center><h1 style=" margin-bottom: 10px; font-family: 'Times New Roman', Times, serif; font-size: xxx-large; ">Our Services</h1></center><center><p style="opacity: 0.7; margin-bottom: 30px;">Everything your pet needs for a happy, healthy life</p></center>
+    <div id="firstcard"><img style="width: 300px; border-radius: 5px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;" src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=600&h=400&fit=crop" alt="">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: x-large;">Full Grooming</h1>
+<p style="opacity: 0.7;">Complete grooming package including
+      bath, haircut, nail trim, ear cleaning, and 
+    <br> teeth brushing.
+</p><div  ><ul id="profit"><li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Bath & blow dry</li>
+<li ><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Breed-specific haircut</li>
+<li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Nail trim</li></ul></div> <p style="font-size: 18px;
+opacity: 0.7; margin: 3px;">Duration:2-3 Hours</p></div>
+    <div id="secondcard">
+        <img style="width: 300px; border-radius: 5px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;" src="https://images.unsplash.com/photo-1581888227599-779811939961?w=600&h=400&fit=crop" alt="">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: x-large;">Bath & Brush</h1>
+<p style="opacity: 0.7;">Refreshing bath with premium shampoo,  blow dry, and thorough brushing to keep <br> coat healthy.
+     
+  
+</p><div  ><ul id="profit"><li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Premium shampoo</li>
+<li ><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Conditioning treatment</li>
+<li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Blow Dry</li></ul></div> <p style="font-size: 18px;
+opacity: 0.7; margin: 3px;">Duration:1 Hours</p></div>
+    <div id="thirdcard"> <img style="width: 300px; border-radius: 5px; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop" alt="">
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: x-large;">Day Care</h1>
+<p style="opacity: 0.7;">Refreshing bath with premium shampoo,  blow dry, and thorough brushing to keep <br> coat healthy.
+     
+  
+</p><div  ><ul id="profit"><li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Premium shampoo</li>
+<li ><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Conditioning treatment</li>
+<li><i style="color: rgb(42, 241, 42);" class="fa-solid fa-check"></i>Blow Dry</li></ul></div> <p style="font-size: 18px;
+opacity: 0.7; margin: 3px;">Duration:30 mins</p></div>
+   
+</div>
+</body>
+</html>
